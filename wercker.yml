@@ -24,9 +24,9 @@ build:
             working-dir: $WERCKER_ROOT
             tag: $WERCKER_GIT_COMMIT
             ports: "8080"
-            username: shanabdu
-            password: dockerPa$$w0rd
-            repository: https://hub.docker.com/repository/docker/shanabdu/shanabdu
+            username: $DOCKER_USERNAME
+            password: $DOCKER_PASSWORD
+            repository: $DOCKER_REPO
             registry: https://phx.ocir.io/v2
 
 deploy-to-kubernetes:
